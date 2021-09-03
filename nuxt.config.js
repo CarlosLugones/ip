@@ -105,7 +105,11 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: 'Mi IP',
+      short_name: 'ip',
+      lang: 'es',
+      useWebmanifestExtension: false,
+      theme_color: '#000000'
     }
   },
 
