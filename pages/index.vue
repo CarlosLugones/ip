@@ -33,7 +33,7 @@ export default {
   },
   async mounted () {
     const ip = await this.getIp()
-    this.ip = this.getIpData(ip)
+    this.ip = await this.getIpData(ip)
   },
   methods: {
     async getIp () {
