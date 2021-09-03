@@ -25,6 +25,16 @@
         </svg>
       </div>
     </div>
+    <!-- Google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5H3N4GT4J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S5H3N4GT4J');
+    </script>
+    <!-- end Google analytics -->
   </div>
 </template>
 
