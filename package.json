@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/pwa": "^3.3.5",
     "@oruga-ui/oruga": "^0.4.2",
     "core-js": "^3.15.1",
     "ip": "^1.1.5",
