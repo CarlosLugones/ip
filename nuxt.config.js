@@ -94,24 +94,11 @@ export default {
     '@oruga-ui/oruga/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
     'nuxt-rfg-icon'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      name: 'Mi IP',
-      short_name: 'ip',
-      lang: 'es',
-      useWebmanifestExtension: false,
-      theme_color: '#000000'
-    }
-  },
 
   'rfg-icon': {
     static: true,
