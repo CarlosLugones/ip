@@ -32,12 +32,18 @@ export default {
     }
   },
   async mounted () {
-    const ip = require('ip')
-    const address = ip.address()
-    const { data } = await this.$axios.get(`https://lugodev-cors-anywhere.herokuapp.com/http://ip-api.com/json/${address}`)
-    this.ip = data
+    const ip = await this.getIp()
+    this.ip = this.getIpData(ip)
   },
   methods: {
+    async getIp () {
+      const { data } = await this.$axios.get('https://api.ipify.org?format=json')
+      return data.ip
+    },
+    async getIpData (ip) {
+      const { data } = await this.$axios.get(`https://lugodev-cors-anywhere.herokuapp.com/http://ip-api.com/json/${ip}`)
+      return data
+    },
     goToVPN () {
       window.location = 'https://lugodev.link/vpn'
     }
