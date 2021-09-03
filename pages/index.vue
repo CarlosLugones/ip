@@ -34,7 +34,7 @@ export default {
   async mounted () {
     const ip = require('ip')
     const address = ip.address()
-    const { data } = await this.$axios.get(`https://cors-anywhere.herokuapp.com/http://ip-api.com/json/${address}`)
+    const { data } = await this.$axios.get(`https://lugodev-cors-anywhere.herokuapp.com/http://ip-api.com/json/${address}`)
     this.ip = data
   },
   methods: {
